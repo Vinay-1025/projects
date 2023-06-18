@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>
-        S_outing
+            S_OUTING
         </title>
+        <link rel="stylesheet" type="text/css" href="outing.css">
     </head>
     <body>
         <form  method="post" >
@@ -13,12 +14,14 @@
                 <input class="user-name" type="text" name="userName" placeholder="ENTER USER NAME" minlength="5" maxlength="15" required>
                 <input class="user-id" type="text" name="userId" placeholder="ENTER USER ID" minlength="7" required>
                 <input class="phno" type="int" name="mobile" placeholder="ENTER MOBILE NUMBER" min="10" max="10" required>
-                <input class="y" type="radio" name="year" value="P1" >P1
-                <input class="y" type="radio" name="year" value="P2" >P2
-                <input class="y" type="radio" name="year" value="E1" >E1
-                <input class="y" type="radio" name="year" value="E2" >E2
-                <input class="y" type="radio" name="year" value="E3" >E3
-                <input class="y" type="radio" name="year" value="E4" >E4
+                <div class="y">
+                    <input type="radio" name="year" value="P1" >P1
+                    <input type="radio" name="year" value="P2" >P2
+                    <input type="radio" name="year" value="E1" >E1
+                    <input type="radio" name="year" value="E2" >E2
+                    <input type="radio" name="year" value="E3" >E3
+                    <input type="radio" name="year" value="E4" >E4
+                </div>
                 <input class="b" type="text" name="branch" placeholder="CSE,ECE,CE,ME,EEE,OTH" minlength="2" maxlength="3" required>
                 <input class="s" type="text" name="section" placeholder="ENTER SECTION" required>
                 <input class="mail" type="email" name="email" placeholder="ENTER COLLEGE MAIL-ID" required>
@@ -27,7 +30,7 @@
                 <input class="od" type="text" name="outDate" placeholder="ENTER OUT-DATE" required>
                 <input class="ot" type="text" name="outTime" placeholder="ENTER OUT-TIME" required>
                 <input class="it" type="text" name="inTime" placeholder="ENTER IN-TIME" required>
-                <input class="r" type="text" name="reason" placeholder="ENTER A VALID REASON" required>
+                <input class="reason" type="text" name="reason" placeholder="ENTER A VALID REASON" required>
                 <input class="sub" type="submit" value="SUBMIT">
             </div>
         </form> 
