@@ -54,7 +54,7 @@ a:hover{
     transition: all 1s;
     color: rgb(18, 85, 83);
     border: 1px solid black;
-    margin: 3px;
+    margin: 10px;
     text-shadow: 2px 2px 4px rgb(48, 57, 46);
     box-shadow: 3px 4px 7px rgb(255, 0, 0);
 }
