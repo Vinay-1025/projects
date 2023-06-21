@@ -195,16 +195,19 @@ table{
     text-align: right;
 }
 .link{
-    position: relative;
     background-color: rgb(0, 0, 0);
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px red;
     box-shadow: 2px 2px 5px black;
+    border: none;
 }
 .button:hover,.link:hover{
     color: aqua;
     background-color: #000000;
+    border-bottom: 1px solid rgb(255, 255, 255);
     text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    box-shadow: 0px 0px 5px white;
     transition: all 1s;
+    margin: 10px;
 }

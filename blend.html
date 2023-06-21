@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BLEND</title>
+        <style>
+            body{
+                width: 100%;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            .container{
+                background: url(rgukt.jpg) center/cover no-repeat;
+                height: 90vh;
+                overflow: hidden;
+            }
+            .container::before{
+                content: '';
+                position: absolute;
+                background: url(sp.png) center/cover no-repeat;
+                width: 100%;
+                height: 100%;
+                mix-blend-mode: screen;
+                overflow: hidden;
+            }
+            .main{
+                width: 29%;
+                display: flex;
+                justify-content: right;
+                position: absolute;
+                word-wrap: break-word;
+                text-align: center;
+                font-size: larger;
+                margin-top: 10%;
+                left: 65%;
+            }
+            .left{
+                width: 50%;
+                height: fit-content;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .right{
+                width: 50%;
+                word-wrap: break-word;
+                background-color: rgba(199, 20, 20, 0);
+                height: fit-content;
+            }
+            .data{
+                margin-top: 60px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(255, 0, 0);
+                text-shadow: 2px 2px 7px black;
+                box-shadow: 2px 2px 7px green;
+            }
+            a:hover{
+                transition: all 1s;
+                color: rgb(18, 85, 83);
+                border: 1px solid black;
+                margin: 3px;
+                text-shadow: 2px 2px 4px rgb(48, 57, 46);
+                box-shadow: 3px 4px 7px rgb(255, 0, 0);
+            }
+            b{
+                font-weight: 20px;
+                font-size: larger;
+                color: rgb(15, 120, 120);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <span class="main">
+                <div class="left">
+                    <p>
+                        WELCOME TO RGUKT
+                    </p>
+                </div>
+                <div class="right">
+                    <br><b>GET ACCESS</b><br>
+                    <div class="data">
+                        <a href="#">STUDENT</a>&nbsp;&nbsp;
+                        <a href="#">ADMIN</a>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </body>
+</html>
