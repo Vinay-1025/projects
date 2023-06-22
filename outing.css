@@ -1,6 +1,7 @@
 
 body {
     color: rgb(1, 83, 86);
+    overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
@@ -16,13 +17,14 @@ body {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.534), rgba(14, 151, 172, 0));
     box-shadow: 0 8px 32px 0 rgba(184, 10, 10, 0.37);
     border: 1px solid rgba(6, 128, 113, 0.519);
+    width: fit-content;
 }
 
 .box {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    width: 400px;
+    width: 19rem;
     height: 580px;
     display: flex;
     align-items: center;
