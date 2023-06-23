@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    background-color: rgba(51, 48, 48, 0.335);
+}
+
+.left {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(51, 48, 48, 0.335);
+}
+
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.single-chart {
+    position: absolute;
+    width: 33%;
+    justify-content: space-around;
+}
+
+.circular-chart {
+    display: block;
+    margin-right: 20px;
+    max-width: 80%;
+    max-height: 280px;
+    border-radius: 100px;
+    border-color: rgb(245, 0, 0);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #464242;
+    stroke-width: 2;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 1;
+    stroke-linecap: round;
+    animation: progress 5s ease-out forwards;
+}
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 4 9; 
+    }
+    20%{
+        stroke-dasharray: 0 5 10;
+    }
+    50%{
+        stroke-dasharray: 0 3 5 7;
+    }
+    70%{
+        stroke-dasharray: 3 9 13;
+    }
+}
+
+.circular-chart.orange .circle {
+    stroke: #0000ff;
+}
+
+.circular-chart.green .circle {
+    stroke: #0000ff;
+}
+
+.circular-chart.blue .circle {
+    stroke:#0000ff;
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+
+.card-container {
+    -webkit-perspective: 500%;
+    perspective: 500%;
+}
+
+.card-container:hover .card {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card {
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border: 5px solid rgba(255, 0, 0, 0.101);
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.cards-container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: (#062c47 #b69898);
+    height: 100px;
+    margin: 10px;
+}
+
+.front,
+.back {
+    box-shadow: 0 1px 6px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+.sub{
+    margin: 10px;
+    text-align: center;
+    color: rgb(3, 90, 117);
+    text-shadow: 2px 2px 5px red;
+    word-wrap: break-word;
+}
+.data{
+    text-align: center;
+    color: white;
+    font-weight: 10px;
+    font-size: large;
+    word-wrap: break-word;
+}
+span{
+    margin-left: 20px;
+    color: green;
+    text-shadow: 2px 2px 5px blue;
+}

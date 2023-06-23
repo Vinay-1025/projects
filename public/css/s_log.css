@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://wallpaperboat.com/wp-content/uploads/2020/11/24/61606/tree-minimalist-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(21, 255, 0, 0.3), rgba(247, 0, 0, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 90px rgb(35, 93, 19);
+}
+.box::before{
+    content: '';
+    width: 1000px;
+    height: 400px;
+    background: linear-gradient(0deg, transparent, 
+    #3ca50798, #0dff002a);
+    box-shadow: 0px 0px 20px green;
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+}
+.box::after{
+    content: '';
+    width: 1000px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, 
+    #3ca50798, #0dff002a);
+    box-shadow: 0px 0px 20px green;
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+    animation-delay: 7s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.user-img {
+    height: 1000px;
+    width: 70px;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.737));
+    color: #315d4ab7;
+}
+
+.user {
+    margin: 20px 0 10px;
+    color: rgba(255, 255, 255, 0.601);
+    font-size: larger;
+    text-shadow: 3px 3px 8px red;
+    font-weight: bolder;
+}
+.user:hover{
+    color: rgba(62, 9, 33, 0.616);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.367);
+}
+.user-name {
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(4, 0, 255, 0.37);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+.user-name:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    border: 1px solid grey;
+}
+.user-id {
+    border: 1px solid #eeeeee;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 4, 255, 0.37);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+.user-id:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    border: 1px solid grey;
+}
+.password {
+    border: 1px solid #eeeeee;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(34, 0, 255, 0.37);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+.password:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    border: 1px solid grey;
+}
+.login{
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.login:hover{
+    color: rgba(255, 255, 255, 0.444);
+    transition: all 0.5s;
+    text-shadow: 2px 2px 3px red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.review{
+    color: white;
+    size: small;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+a{
+    color: rgb(203, 9, 9);
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.444);
+    text-shadow: 2px 2px 3px red;
+    transition: all 0.5s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    color: wheat;
+}
+td{
+    text-align: center;
+    color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.left
+{
+    color: cadetblue;
+    text-align: left;
+    width: 45%;
+}
+.right{
+    text-align: right;
+    width: 45%;
+}
+

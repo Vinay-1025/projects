@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="rgu.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S_LEAVE</title>
+        <link rel="stylesheet" type="text/css" href="/css/leave.css">
+    </head>
+    <body>
+        <form method="post" action="/submit-leave">
+            <div class="glass box">
+                <div class="user">LEAVE</div>
+                <!-- <input class="app-id" type="text" name="applicationId" placeholder="ENTER YOUR APPLICATIONID." required> -->
+                <input class="user-name" type="text" name="userName" placeholder="ENTER USER NAME." minlength="5" maxlength="15" required>
+                <input class="user-id" type="text" name="userId" placeholder="ENTER USERID." minlength="7" required>
+                <input class="phno" type="int" name="mobile" placeholder="ENTER MOBILE NUMBER." minlength="10" maxlength="10" required>
+                <div class="y">
+                <input type="radio" name="year" value="P1" >P1
+                <input type="radio" name="year" value="P2" >P2
+                <input type="radio" name="year" value="E1" >E1
+                <input type="radio" name="year" value="E2" >E2
+                <input type="radio" name="year" value="E3" >E3
+                <input type="radio" name="year" value="E4" >E4
+                </div>
+                <input class="b" type="text" name="branch" minlength="2" maxlength="3" placeholder="CSE,ECE,CE,ME,EEE,OTH." required>
+                <input class="s" type="text" name="section" placeholder="ENTER SECTION." required>
+                <input class="mail" type="email" name="email" placeholder="ENTER COLLEGE MAILID."required>
+                <input class="pn" type="text" name="parentName" placeholder="ENTER PARENT NAME." required>
+                <input class="pm" type="int" name="parentMobile" placeholder="ENTER MOBILE NUMBER." required>
+                <input class="od" type="date" name="outDate" placeholder="ENTER OUTDATE." required>
+                <input class="id" type="date" name="inDate" placeholder="ENTER INDATE." required>
+                <input class="reason" type="textarea" name="reason" placeholder="ENTER THE REASON HERE." required>
+                <input class="sub" type="submit" value="SUBMIT" name="submit">
+            </div>
+        </form>
+    </body>
+</html>

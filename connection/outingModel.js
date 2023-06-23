@@ -1,0 +1,61 @@
+const {Sequelize,sequelize}=require('./connection')
+
+
+module.exports=Outing=sequelize.define('outing',{
+    applicationId:{
+            type:Sequelize.DataTypes.STRING,
+            allowNull:false,
+            primaryKey:true
+    },
+    userName:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    userId:{
+        type:Sequelize.DataTypes.STRING,
+        allowNull:false
+    },
+    mobile:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    year:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    branch:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    section:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    email:{
+        type:Sequelize.DataTypes.STRING,   
+    },
+    parentName:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    parentMobile:{
+        type:Sequelize.DataTypes.STRING,
+    },
+    outDate:{
+        type:Sequelize.DataTypes.DATE
+    },
+    outTime:{
+        type:Sequelize.DataTypes.TIME
+    },
+    inTime:{
+        type:Sequelize.DataTypes.TIME
+    },
+    reason:{
+        type:Sequelize.DataTypes.STRING
+    },
+    approved:{
+        type:Sequelize.DataTypes.STRING,
+        defaultValue:'pending'
+    },
+    outings:{
+        type:Sequelize.DataTypes.INTEGER,
+        defaultValue:0
+    }
+},{
+    freezeTableName:true,
+    timestamps:false
+})
