@@ -1,15 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100% auto;
 }
 body{
+    width: 100%;
     overflow: hidden;
 }
 
 .container {
+    overflow: hidden;
     width: 100%;
     min-height: 100vh;
+    min-width: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,7 +39,7 @@ body{
 }
 
 .content p {
-    font-size: 16px;
+    font-size: 10px;
     color: #fff;
 }
 
@@ -53,7 +56,10 @@ body{
     --border-right: 6px;
     --text-stroke-color: rgba(255, 255, 255, 0.6);
     --fs-size: 2em;
-    letter-spacing: 3px;
+    letter-spacing: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     text-decoration: none;
     font-size: var(--fs-size);
     font-family: "Arial";
@@ -71,8 +77,8 @@ body{
     inset: 0;
     border-right: var(--border-right) solid var(--animation-color);
     overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
+    transition: 5s;
+    -webkit-text-stroke: 1rem var(--animation-color);
 }
 
 .button:hover .hover-text {
@@ -82,9 +88,9 @@ body{
 
 .square {
     position: relative;
-    margin: 0 10px;
-    width: 300px;
-    height: 300px;
+    margin: 0rem;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,10 +153,9 @@ body{
 
 .circle {
     position: relative;
-    padding: 30px 900px;
     text-align: center;
     transition: 0.5s;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .square:hover {
@@ -183,8 +188,8 @@ body{
 
 }
 
-.DrugRadar {
-    font-size: 50px;
+.text{
+    font-size: 30rem;
 }
 table{
     color: white;
@@ -195,16 +200,20 @@ table{
     text-align: right;
 }
 .link{
-    position: relative;
+    overflow: hidden;
     background-color: rgb(0, 0, 0);
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px red;
     box-shadow: 2px 2px 5px black;
+    border: none;
 }
 .button:hover,.link:hover{
     color: aqua;
     background-color: #000000;
+    border-bottom: 1px solid rgb(255, 255, 255);
     text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    box-shadow: 0px 0px 5px white;
     transition: all 1s;
+    margin: 10px;
 }
