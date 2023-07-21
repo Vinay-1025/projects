@@ -1,0 +1,115 @@
+
+body {
+    color: rgb(1, 83, 86);
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://wallpaperset.com/w/full/1/6/e/313069.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.534), rgba(14, 151, 172, 0));
+    box-shadow: 0 8px 32px 0 rgba(184, 10, 10, 0.37);
+    border: 1px solid rgba(6, 128, 113, 0.519);
+    width: fit-content;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 19rem;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 90px rgb(4, 1, 71);
+}
+.box::before{
+    content: '';
+    width: 1000px;
+    height: 400px;
+    background: linear-gradient(0deg, transparent, 
+    #07a59398, #00eaff2a);
+    box-shadow: 0px 0px 20px rgb(0, 30, 128);
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+}
+.box::after{
+    content: '';
+    width: 1000px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, 
+    #07a59398, #00eaff2a);
+    box-shadow: 0px 0px 20px rgb(0, 19, 128);
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+    animation-delay: 7s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.user {
+    margin: 5px 0 10px;
+    color: rgba(255, 255, 255, 0.601);
+    font-size: larger;
+    text-shadow: 3px 3px 8px red;
+    font-weight: bolder;
+}
+.user:hover{
+    color: rgba(62, 9, 33, 0.616);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.367);
+}
+.y{
+    display: flex;
+}
+input{
+    width: 70%;
+    text-decoration: none;
+}
+
+.app-id,.user-name,.user-id,.phno,.b,.s,.mail,.pn,.pm,.od,.ot,.it,.reason {
+    border: 1px solid rgba(0, 29, 195, 0.504);
+    background: rgba(6, 24, 126, 0.497);
+    box-shadow: 0 8px 32px 0 rgba(4, 0, 255, 0.37);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+.app-id:hover,.user-name:hover,.user-id:hover,.phno:hover,.b:hover,.s:hover,.mail:hover,.pn:hover,.pm:hover,.od:hover,.ot:hover,.it:hover,.reason:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    border: 2px solid rgb(5, 92, 60);
+}
+.sub{
+    width: 20%;
+    margin-left: 200px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(6, 5, 5);
+}
+.sub:hover{
+    color: crimson;
+    text-shadow: 2px 2px 3px rgb(213, 125, 125);
+    transition: all 1s;
+}
